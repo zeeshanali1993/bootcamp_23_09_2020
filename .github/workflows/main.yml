@@ -12,15 +12,15 @@ jobs:
         uses: actions/setup-node@v1.4.3
         with:
           node-version: 12.x
-
-      - name: Installing Surge
-        run: npm install surge -g
       
       - name: Installing Yarn
         run: npm install yarn -g
       
       - name: Building react
         run: yarn build
+      
+      - name: Installing Surge
+        run: npm install surge -g
       
       - name: Publishing on Yarn
         run: surge ./build http://bootcamp_1_23_09_2020.surge.sh/ --token {{secrets.BOOTCAMP_23_09_2020}}
