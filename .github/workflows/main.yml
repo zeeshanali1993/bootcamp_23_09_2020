@@ -22,5 +22,5 @@ jobs:
       - name: Installing Surge
         run: npm install surge -g
       
-      - name: Publishing on Yarn
+      - name: Publishing on Surge
         run: surge ./build http://bootcamp_1_23_09_2020.surge.sh/ --token {{secrets.BOOTCAMP_23_09_2020}}
