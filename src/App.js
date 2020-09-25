@@ -1,6 +1,5 @@
 import React from 'react';
-import ReceiveValue from './childObject.js'
-
+import ReceiveValue from './childObject.js';
 
 function App()
 {
